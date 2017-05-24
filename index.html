@@ -19,11 +19,13 @@ body {
 	;
 	background-image: url(resources/mttrackerlores.jpg);
 	margin: 0;
-    webkit-user-select: none; /* Chrome all / Safari all */
-    o-user-select: none;
-    user-select: none;
-    webkit-touch-callout:none;
 }
+
+ $(document).ready(function() {
+    $("audio").bind("contextmenu",function(){
+        return false;
+        });
+ } );
 
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
@@ -123,9 +125,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 <p><audio controls style=" width:200px;" controlsList="nodownload" oncontextmenu="return false;"><source src="mp3/UrbanDistressCall.mp3" type"audio/mpeg"></audio>&nbsp;&nbsp;<font>URBAN DISTRESS CALL - ZEROLIZER</font>&nbsp;&nbsp;<a href="mp3/UrbanDistressCall.mp3"><img src="resources/downloadcopy.png" width="30" height="30"/></a></p>
 
-<p><audio controls style=" width:200px;" controlsList="nodownload"><source src="mp3/Spikey Mechaniks (Diskette Single).mp3" type"audio/mpeg"></audio>&nbsp;&nbsp;<font>SPIKEY MECHANIKS (DISKETTE SINGLE) - 4 FOR FAKE</font></p>
+<p><audio controls style=" width:200px;" controlsList="nodownload" oncontextmenu="return false;"><source src="mp3/Spikey Mechaniks (Diskette Single).mp3" type"audio/mpeg"></audio>&nbsp;&nbsp;<font>SPIKEY MECHANIKS (DISKETTE SINGLE) - 4 FOR FAKE</font></p>
 
-<p><audio controls style=" width:200px;" controlsList="nodownload"><source src="mp3/HellHex.mp3" type"audio/mpeg"></audio>&nbsp;&nbsp;<font>HELL HEX (PLAGA JAM) - INBREED FROM NOAH + KAIN</font></p>
+<p><audio controls style=" width:200px;" controlsList="nodownload" oncontextmenu="return false;"><source src="mp3/HellHex.mp3" type"audio/mpeg"></audio>&nbsp;&nbsp;<font>HELL HEX (PLAGA JAM) - INBREED FROM NOAH + KAIN</font></p>
 
     </div>
     
