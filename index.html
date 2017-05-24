@@ -14,12 +14,14 @@ body {
 	background: #FFFFFFF;
 	padding: 0px;
 	color: #63B3DF; 
-	 font-family: 'capture_itregular';
+	font-family: 'capture_itregular';
     src: url('capture_it-webfont.woff2') format('woff2'),
          url('capture_it-webfont.woff') format('woff');
 	background-image: url(resources/mttrackerlores.jpg);
 	margin: 0;
 }
+
+{"mode":"optimal","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
 
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
@@ -68,7 +70,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 .content {
 	padding: 0px 0;
-	font-family: "Capture it", "Arial Unicode MS";
+	font-family: 'capture_itregular';
+    src: url('capture_it-webfont.woff2') format('woff2'),
+         url('capture_it-webfont.woff') format('woff');
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
